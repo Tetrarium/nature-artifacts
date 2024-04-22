@@ -73,26 +73,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
-  text-decoration: none;
   text-wrap: nowrap;
-  transition: all 0.2s linear;
-}
-.menu__link:hover {
-  text-decoration: underline;
-  color: #BAE249;
-}
-
-.btn-icon {
-  width: 24px;
-  height: 24px;
-  background: none;
-  border: none;
-}
-.btn-icon__img {
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 .intro {
@@ -114,5 +95,68 @@
   line-height: 1.5;
   margin: 16px 0;
 }
+.intro__btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #BAE249;
+  background: none;
+  border: none;
+}
+
+/* UI */
+/* links */
+.link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 7px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+.link:hover {
+  color: #BAE249;
+}
+.link:focus {
+  outline: none;
+  border-color: #83A440;
+}
+.link:active {
+  color: #688B05;
+  border-color: transparent;
+}
+
+.link-icon {
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+  transition: border 0.2s linear;
+  padding: 1px;
+}
+.link-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.link-icon path {
+  transition: stroke 0.2s linear;
+  stroke: #BAE249;
+}
+.link-icon:hover path {
+  stroke: #91AC46;
+}
+.link-icon:focus {
+  border-color: #83A440;
+}
+.link-icon:focus path {
+  stroke: #BAE249;
+}
+.link-icon:active {
+  border-color: transparent;
+}
+.link-icon:active path {
+  stroke: #688B05;
+}
+
+/* buttons */
 
 /*# sourceMappingURL=main.css.map */
