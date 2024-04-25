@@ -123,6 +123,10 @@ $red: #E24949;
 .main {
   background-color: $bg-color;
   padding: 60px 0;
+
+  &__cards {
+    margin-bottom: 55px;
+  }
 }
 
 .cards {
@@ -208,6 +212,75 @@ $red: #E24949;
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: $gray;
+  }
+}
+
+.new-artf {
+  &__title {
+    font-family: $cormorant;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4.8rem;
+    line-height: 1;
+    color: $white;
+    margin-bottom: 30px;
+  }
+  
+  &__content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  &__picture {
+    width: 73%;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__description {
+    width: 23%;
+  }
+}
+
+.description {
+  background-color: $primary-green;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: $cormorant;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: $bg-color;
+  }
+
+  &__content {
+    flex-grow: 1;
+    margin-bottom: 8px;
+  }
+
+  &__paragraph {
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $green-text;
+    margin-bottom: 2.4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -345,7 +418,7 @@ $red: #E24949;
   }
 }
 
-.btn-card {
+.btn-more {
   font-family: $open-sans;
   font-weight: 400;
   font-size: 1.6rem;
@@ -380,6 +453,71 @@ $red: #E24949;
     color: gray;
     border-color: gray;
     pointer-events: none;
+  }
+}
+
+.btn-all {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: $bg-shade-color;
+  cursor: pointer;
+
+  transition: color .2s linear;
+
+  svg {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    transition: transform .2s linear;
+  }
+
+  path {
+    fill: $bg-shade-color;
+    transition: fill .2s linear;
+  }
+
+  &__title {
+    font-family: $open-sans;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: inherit;
+  }
+
+  &:focus {
+    outline: 1px solid $green-focus;
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    outline: none;
+    color: $green-active-click;
+    path {
+      fill: $green-active-click;
+    }
+    svg {
+      transform: scaleX(1.23);
+    }
+  }
+
+  &:active {
+    outline: none;
+    color: $bg-shade-color;
+    path {
+      fill: $bg-shade-color;
+    }
+    svg {
+      transform: scaleX(1);
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    color: $gray;
+    path {
+      fill: $gray;
+    }
   }
 }
 

@@ -94,6 +94,9 @@ html {
   background-color: #1D2F30;
   padding: 60px 0;
 }
+.main__cards {
+  margin-bottom: 55px;
+}
 
 .cards__content {
   list-style: none;
@@ -164,6 +167,64 @@ html {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #899D9D;
+}
+
+.new-artf__title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 4.8rem;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.new-artf__content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.new-artf__picture {
+  width: 73%;
+}
+.new-artf__img {
+  width: 100%;
+  display: block;
+}
+.new-artf__description {
+  width: 23%;
+}
+
+.description {
+  background-color: #BAE249;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.description__header {
+  margin-bottom: 10px;
+}
+.description__title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: #1D2F30;
+}
+.description__content {
+  flex-grow: 1;
+  margin-bottom: 8px;
+}
+.description__paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #506829;
+  margin-bottom: 2.4rem;
+}
+.description__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 /* UI */
@@ -266,7 +327,7 @@ html {
   fill: #899D9D;
 }
 
-.btn-card {
+.btn-more {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -278,23 +339,80 @@ html {
   cursor: pointer;
   transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2s linear;
 }
-.btn-card:hover {
+.btn-more:hover {
   background-color: #BAE249;
   color: #0B1919;
 }
-.btn-card:focus {
+.btn-more:focus {
   outline: 1px solid #83A440;
   outline-offset: 3px;
 }
-.btn-card:active {
+.btn-more:active {
   background-color: #688B05;
   border-color: #688B05;
   color: #0B1919;
 }
-.btn-card:disabled {
+.btn-more:disabled {
   color: gray;
   border-color: gray;
   pointer-events: none;
+}
+
+.btn-all {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #0B1919;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+.btn-all svg {
+  transform: scaleX(1);
+  transform-origin: 0 0;
+  transition: transform 0.2s linear;
+}
+.btn-all path {
+  fill: #0B1919;
+  transition: fill 0.2s linear;
+}
+.btn-all__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: inherit;
+}
+.btn-all:focus {
+  outline: 1px solid #83A440;
+  outline-offset: 3px;
+}
+.btn-all:hover {
+  outline: none;
+  color: #688B05;
+}
+.btn-all:hover path {
+  fill: #688B05;
+}
+.btn-all:hover svg {
+  transform: scaleX(1.23);
+}
+.btn-all:active {
+  outline: none;
+  color: #0B1919;
+}
+.btn-all:active path {
+  fill: #0B1919;
+}
+.btn-all:active svg {
+  transform: scaleX(1);
+}
+.btn-all:disabled {
+  pointer-events: none;
+  color: #899D9D;
+}
+.btn-all:disabled path {
+  fill: #899D9D;
 }
 
 /* pagination */
