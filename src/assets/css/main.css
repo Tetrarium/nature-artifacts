@@ -227,6 +227,39 @@ html {
   margin-bottom: 0;
 }
 
+.footer__subscription {
+  background: url(../images/footer/bg-f.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.subscription {
+  position: relative;
+}
+.subscription__title {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 4.8rem;
+  font-size: 1;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.subscription__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-size: 1.5;
+  color: #fff;
+  max-width: 825px;
+  margin-bottom: 24px;
+}
+.subscription__form {
+  max-width: 350px;
+}
+
 /* UI */
 /* links */
 .link {
@@ -462,6 +495,71 @@ html {
 }
 .pagination__btn:active path {
   fill: #688B05;
+}
+
+/* forms */
+.form-subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+.form-subscription__input {
+  width: 100%;
+}
+.form-subscription__row {
+  width: 100%;
+  position: relative;
+}
+.form-subscription__tooltip {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #E24949;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  z-index: 99;
+  transform: translateY(-100%);
+  display: none;
+}
+.form-subscription__input:invalid + .form-subscription__tooltip {
+  display: block;
+}
+
+.input-subscription {
+  background-color: #fff;
+  padding: 10px 16px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s linear;
+}
+.input-subscription::placeholder {
+  transition: color 0.2s linear;
+}
+.input-subscription:hover {
+  background: #899D9D;
+}
+.input-subscription:hover::placeholder {
+  color: #fff;
+}
+.input-subscription:focus {
+  background: #fff;
+  outline: 1px solid #83A440;
+  outline-offset: 2px;
+}
+.input-subscription:disabled {
+  background-color: #899D9D;
+}
+.input-subscription:invalid {
+  outline-color: #E24949;
+  outline-width: 2px;
+  outline-offset: -2px;
 }
 
 /* effects */
