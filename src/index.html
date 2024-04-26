@@ -188,13 +188,14 @@
           <div class="subscription__form">
             <form action="#" class="form-subscription">
               <div class="form-subscription__row">
-                <input name="name" type="text" class="form-subscription__input input-subscription" placeholder="Имя">
-              </div>
-              <div class="form-subscription__row">
-                <input type="email" class="form-subscription__input input-subscription" placeholder="Email">
+                <input name="name" type="text" class="form-subscription__input input-subscription" placeholder="Имя" required>
                 <p class="form-subscription__tooltip">Недопустимый формат</p>
               </div>
-              <button type="submit" class="btn-form">Отправить</button>
+              <div class="form-subscription__row">
+                <input type="email" class="form-subscription__input input-subscription" placeholder="Email" required>
+                <p class="form-subscription__tooltip">Недопустимый формат</p>
+              </div>
+              <button type="submit" class="btn-submit">Отправить</button>
             </form>
           </div>
         </div>

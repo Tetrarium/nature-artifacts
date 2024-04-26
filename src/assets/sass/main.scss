@@ -561,6 +561,42 @@ $red: #E24949;
   }
 }
 
+.btn-submit {
+  font-family: $open-sans;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 700;
+  color: $bg-shade-color;
+
+  border: none;
+  background: $primary-green;
+  padding: 12px 26px;
+
+  cursor: pointer;
+
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:focus {
+    outline: 1px solid $green-focus;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $green-active-click;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    color: $bg-color;
+    background-color: $gray;
+  }
+}
+
 /* pagination */
 
 .pagination {
@@ -690,6 +726,7 @@ $red: #E24949;
   }
 
   &:disabled {
+    pointer-events: none;
     background-color: $gray;
   }
 

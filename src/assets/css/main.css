@@ -448,6 +448,35 @@ html {
   fill: #899D9D;
 }
 
+.btn-submit {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #0B1919;
+  border: none;
+  background: #BAE249;
+  padding: 12px 26px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.btn-submit:hover {
+  background-color: #91AC46;
+}
+.btn-submit:focus {
+  outline: 1px solid #83A440;
+  outline-offset: 2px;
+}
+.btn-submit:active {
+  outline: none;
+  background-color: #688B05;
+}
+.btn-submit:disabled {
+  pointer-events: none;
+  color: #1D2F30;
+  background-color: #899D9D;
+}
+
 /* pagination */
 .pagination {
   display: flex;
@@ -554,6 +583,7 @@ html {
   outline-offset: 2px;
 }
 .input-subscription:disabled {
+  pointer-events: none;
   background-color: #899D9D;
 }
 .input-subscription:invalid {
