@@ -261,7 +261,7 @@ html {
 }
 
 .socials {
-  background: #1D2F30;
+  background: #0B1919;
 }
 .socials__items {
   list-style: none;
@@ -270,6 +270,16 @@ html {
   justify-content: center;
   padding: 18px;
   gap: 30px;
+}
+
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #899D9D;
+  text-align: center;
+  background-color: #1D2F30;
+  padding: 3px;
 }
 
 /* UI */

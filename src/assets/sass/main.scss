@@ -325,7 +325,7 @@ $red: #E24949;
 }
 
 .socials {
-  background: $bg-color;
+  background: $bg-shade-color;
 
   &__items {
     list-style: none;
@@ -335,6 +335,18 @@ $red: #E24949;
     padding: 18px;
     gap: 30px;
   }
+}
+
+.copyright {
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: $gray;
+
+  text-align: center;
+  background-color: $bg-color;
+
+  padding: 3px;
 }
 
 /* UI */
