@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
 }
 
+/* cursors */
 /* colors */
 .container {
   max-width: 1140px;
@@ -288,6 +289,7 @@ html {
   color: #fff;
   text-decoration: none;
   padding: 0 7px;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
   transition: color 0.2s linear;
 }
 .link:hover {
@@ -303,6 +305,7 @@ html {
 .link-icon {
   background: none;
   padding: 1px;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
 }
 .link-icon svg {
   width: 24px;
@@ -328,6 +331,7 @@ html {
 
 .link-social {
   display: block;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
 }
 .link-social path {
   fill: #899D9D;
@@ -362,7 +366,7 @@ html {
   align-items: center;
   padding: 0 5px;
   border: none;
-  cursor: pointer;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
   transition: color 0.2s linear, padding 0.2s linear;
 }
 .btn-explore__title {
@@ -415,7 +419,7 @@ html {
   background: none;
   border: 1px solid #BAE249;
   padding: 9px 27px;
-  cursor: pointer;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
   transition: color 0.2s linear, background-color 0.2s linear, border-color 0.2s linear;
 }
 .btn-more:hover {
@@ -444,7 +448,7 @@ html {
   align-items: center;
   gap: 5px;
   color: #0B1919;
-  cursor: pointer;
+  cursor: url(../images/cursors/pointer-black.png), pointer;
   transition: color 0.2s linear;
 }
 .btn-all svg {
@@ -503,7 +507,7 @@ html {
   border: none;
   background: #BAE249;
   padding: 12px 26px;
-  cursor: pointer;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
   transition: background-color 0.2s linear;
 }
 .btn-submit:hover {
@@ -546,7 +550,7 @@ html {
   display: block;
   border: none;
   background: none;
-  cursor: pointer;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
   transition: transform 0.2s linear;
 }
 .pagination__btn svg {
@@ -610,7 +614,7 @@ html {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1;
-  cursor: pointer;
+  cursor: url(../images/cursors/pointer-white.png), pointer;
   position: relative;
   transition: background-color 0.2s linear;
 }
