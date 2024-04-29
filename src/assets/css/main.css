@@ -263,6 +263,14 @@ html {
 .socials {
   background: #1D2F30;
 }
+.socials__items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  gap: 30px;
+}
 
 /* UI */
 /* links */
@@ -306,6 +314,30 @@ html {
 }
 .link-icon:active path {
   stroke: #688B05;
+}
+
+.link-social {
+  display: block;
+}
+.link-social path {
+  fill: #899D9D;
+  transition: fill 0.2s linear;
+}
+.link-social svg {
+  display: block;
+}
+.link-social:focus {
+  outline: 1px solid #83A440;
+  outline-offset: 3px;
+}
+.link-social:focus path {
+  fill: #899D9D;
+}
+.link-social:hover path {
+  fill: #BAE249;
+}
+.link-social:active path {
+  fill: #688B05;
 }
 
 /* buttons */

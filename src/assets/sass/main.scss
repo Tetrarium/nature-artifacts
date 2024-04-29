@@ -326,6 +326,15 @@ $red: #E24949;
 
 .socials {
   background: $bg-color;
+
+  &__items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    gap: 30px;
+  }
 }
 
 /* UI */
@@ -384,6 +393,40 @@ $red: #E24949;
   &:active {
     path {
       stroke: $green-active-click;
+    }
+  }
+}
+
+.link-social {
+  display: block;
+  path {
+    fill: $gray;
+
+    transition: fill .2s linear;
+  }
+
+  svg {
+    display: block;
+  }
+
+  &:focus {
+    outline: 1px solid $green-focus;
+    outline-offset: 3px;
+
+    path {
+      fill: $gray;
+    }
+  }
+
+  &:hover {
+    path {
+      fill: $primary-green;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $green-active-click;
     }
   }
 }
