@@ -6,6 +6,8 @@
 
 html {
   font-size: 62.5%;
+
+  overflow-x: hidden;
 }
 
 $open-sans: 'Open Sans', sans-serif;
@@ -27,12 +29,19 @@ $green-focus: #83A440;
 $green-hover: #91AC46;
 $red: #E24949;
 
+/* dimentions */
+$mobile-width: 650px;
+
 
 .container {
   max-width: 1140px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media (max-width: 650px) {
+    padding: 0 32px;
+  }
 }
 
 .header {
@@ -48,6 +57,10 @@ $red: #E24949;
 
   &__bottom {
     padding: 115px 0;
+
+    @media (max-width: $mobile-width) {
+      padding: 70px 0;
+    }
   }
 
   &__inner {
@@ -62,6 +75,10 @@ $red: #E24949;
 
   &__menu {
     flex-grow: 1;
+
+    @media (max-width: $mobile-width) {
+      overflow: scroll;
+    }
   }
 
   &__control {
@@ -74,13 +91,26 @@ $red: #E24949;
     justify-content: space-between;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: $mobile-width) {
+    &__top {
+      position: relative;
+    }
+
     &__logo {
-      margin-right: 10px;
+      margin-right: auto;
+    }
+
+    &__menu {
+      position: absolute;
+      top: 100%;
+      left: 32px;
+      z-index: 1;
+      overflow: hidden;
+      padding: 20px 0;
     }
 
     &__control {
-      margin-left: 10px;
+      margin-left: auto;
     }
   }
 }
@@ -95,7 +125,7 @@ $red: #E24949;
 
   &__link {
     font-family: $open-sans;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     text-wrap: nowrap;
   }
@@ -107,13 +137,21 @@ $red: #E24949;
   &__inner {
     width: 60%;
     color: $white;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 
   &__title {
     font-family: $cormorant;
-    font-size: 60px;
+    font-size: 6rem;
     line-height: 1;
     font-weight: 700;
+
+    @media (max-width: $mobile-width) {
+      font-size: 4.8rem;
+    }
   }
 
   &__text {
@@ -138,6 +176,7 @@ $red: #E24949;
   &__content {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
   }
@@ -234,10 +273,18 @@ $red: #E24949;
     display: flex;
     gap: 30px;
     justify-content: space-between;
+
+    @media (max-width: $mobile-width) {
+      flex-wrap: wrap;
+    }
   }
 
   &__picture {
     width: 73%;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -247,6 +294,10 @@ $red: #E24949;
 
   &__description {
     width: 23%;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 }
 
@@ -296,6 +347,10 @@ $red: #E24949;
     background-position: center;
 
     padding: 60px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
 
@@ -812,10 +867,7 @@ $red: #E24949;
     content: '';
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(29, 47, 48, .7);
   }
 }
